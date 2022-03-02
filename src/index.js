@@ -5,6 +5,13 @@ const { Chess } = require("chess.js");
 let btn = document.querySelector(".press");
 btn.addEventListener("click", flip);
 
+
+
+let reset = document.getElementById("reset");
+reset.addEventListener("click", () => {
+  board.start();
+});
+
 function move2d4() {
   // board.move("d2-d6");
   board.move("wQ-e8");
