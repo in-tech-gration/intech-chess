@@ -1,2 +1,3 @@
 # intech-chess
-Created with CodeSandbox
+
+Created with love from the students of intechgration.
