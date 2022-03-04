@@ -1,7 +1,5 @@
 //import { Chess } from "chess.js";
 
-const { Chess } = require("chess.js");
-
 let btn = document.querySelector(".press");
 btn.addEventListener("click", flip);
 
