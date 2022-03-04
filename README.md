@@ -9,3 +9,8 @@ Created with love from the students of intechgration.
 3. Add your changes with `git add .`
 4. Commit your changes with `git commit -m "Your commit message"`
 5. Push your changes to the remote repository with `git push origin NewBranchName`
+
+## Useful git commands
+
+- `git status`: Shows the status of the current repository
+- `git log`: Shows all of the commits in the current repository
