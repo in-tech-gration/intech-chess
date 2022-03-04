@@ -66,5 +66,10 @@ while (!chess.game_over()) {
   chess.move(move)
 }
 
+
+if(chess.game_over()) {
+  document.querySelector(".darkSouls").style.display = "inline"
+}
+
 // console.log(chess.pgn())
 // button. when you press it. you move the d2 pawn to d4;

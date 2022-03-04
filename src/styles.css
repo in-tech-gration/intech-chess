@@ -1,3 +1,16 @@
 body {
   font-family: sans-serif;
 }
+.smh {
+  text-align: center;
+  background-color: gray;
+  height: 50px;
+}
+h3 {
+  color: red;
+  background: gray;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  display: none;
+}
