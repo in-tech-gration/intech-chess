@@ -1,38 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <h1 style="margin-left: -50px;color:whitesmoke">Chess Intechgration Project</h1>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-
+    <link rel="stylesheet" href="./src/style.css">
     <link
       rel="stylesheet"
       href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
-      integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <button class="press">click me</button>
-    <div id="daBoard" style="width: 400px;"></div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
-      crossorigin="anonymous"
-    ></script>
 
-    <script
-      src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
-      integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
-      crossorigin="anonymous"
-    ></script>
+      <body bgcolor=" #6b3622" style="margin-left:40vw ">  
+        <div id="myDiv"></div>
+          <!--<div class="box"style="margin-left:0px" style="width:50px;background:whitesmoke" >  -->
 
-    <!-- chess.js cdn  -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"
-      integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+            <div class="boxClock" style="margin-left:-200px" >      
+              <body onload="startTime()">
+                <div id="txt" style="color:#66da49" ></div>
+              </body>
+            </div>
+   <div id="box1">gfgfgfgf</div>
+
+            <button class="press" style="margin-left:-200px" style="color:blue">Play as</button>
+     
+            <button class="b" style="margin-bottom:30px" style="padding-top:30px" style="margin-left:350px" style="color:blue">Play </button>
+
+
+
+            <p onclick="brown()"  style="margin-left:-200px"  style="padding-top:0px" style="width:50px;background:whitesmoke">Brown</p>
+            <p onclick="darkBrown()" style="margin-left:-200px"  style="padding-top:0px"    style="width:100px;background:whitesmoke ">Dark Brown</p>
+
+
+            <div class = "box" id="daBoard" style="width: 300px;"></div>    <!-- chessboard-->
+              </div> 
+  
+            
+       <!-- New Codes Starts-->
+
+       <div id="myElement">Hello World!</div>
+
+       <div class="formbox5"> yyyyyyyyyyyyyyyyyy</div>
+
+        <div class="boxElement">
+            <div class="formbox1"> </div>
+             <div class="formbox2">   </div>            
+        </div>
+
+      <div class="stopwatchup"   style="width:120px;background:rgb(187, 113, 113)">
+        <div class="basic stopwatch"  style="color:#66da49"></div>
+       <div class="basic stopwatch"   style="color:#66da49"></div>
+
+ </div>
+
+
+         
+     
+      
+      
+<!-- New Codes Ends-->
+<script
+src="https://code.jquery.com/jquery-3.5.1.min.js"
+integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+crossorigin="anonymous">
+</script>
+
+<script
+src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+crossorigin="anonymous"
+></script>
+<div class="body">
+<!-- chess.js cdn --> 
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"
+integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+
+
+
+    
+
 
     <script src="src/index.js"></script>
   </body>
