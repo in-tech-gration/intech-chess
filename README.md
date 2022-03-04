@@ -17,3 +17,7 @@ Created with love from the students of intechgration.
 - `git branch`: Shows all of the branches in the current repository
 - `git checkout`: Checks out a specific branch
 - `git remote get-url`: Shows the URL of the remote repository
+- `git remote set-url`: Sets the URL of the remote repository
+- `git push`: Pushes the current branch to the remote repository
+- `git pull`: Pulls the current branch from the remote repository
+- `git diff`: Shows the changes between the current branch and the remote repository
