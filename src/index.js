@@ -206,8 +206,9 @@ function startTime() {
   document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
   setTimeout(startTime, 1000);
 }
+
+
 function checkTime(i) {
   if (i < 10) { i = "0" + i };
   return i;
-}
-                                           // Clock ends//
+}                 
