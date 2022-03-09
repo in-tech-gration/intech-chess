@@ -1,104 +1,335 @@
-body {
-}
-#box{                  /*  the body */
-  position:relative;
-      display:flex;
-    }
-   
-  
 
-   
- 
-   
-    h1{
-        margin-left: 50px;
-        color:whitesmoke;
-    }
-  
-  /*  stopwatch*/
-   
-  
-  
-   
- 
-    
-    .stopwatch span {
-      font-weight: bold;
-      display: block;   
-    }
-    
-    .stopwatch a {
-      padding-right: 3px;
-      text-decoration: none; 
-    }
-  
-  
-    .formbox1{
-      position: absolute;
-      display:flex;
-      width:148px;
-      height:60px;
-      background-color: rgb(231, 184, 184);
-      border: 2px solid rgb(17, 10, 10);
-      padding-left:0px;
-      margin-top:5px;
-      border-radius: 5px;
-    }
-  
-    
-    .formbox2{
-      position: absolute;
-      display:flex;
-      width:148px;
-      height:60px;
-      background-color: rgb(231, 184, 184);
-      border: 2px solid rgb(17, 10, 10);
-      padding-left:0px;
-      margin-top:70px;
-      border-radius: 5px;
-    }
-    .formbox3{
-      position: absolute;
-      display:flex;
-      width:148px;
-      height:60px;
-      background-color: rgb(231, 184, 184);
-      border: 2px solid rgb(17, 10, 10);
-      padding-left:0px;
-      margin-top:135px;
-      border-radius: 5px;
-    }
-  
-  
-  .boxClock{
-    position: absolute;
-    display:flex;
-    width:60px;
-    height:20px;
 
-    border: 2px solid rgb(17, 10, 10);
-    padding-left:0px;
-    margin-top:-288px;
-    margin-left: -220px;
-    border-radius: 5px;
+body {          
+
+       background: "rgb(104, 43, 19)";
+       width: 100%;
+       height: 100%;  
+      justify-content: center;
+      align-items: center;
+     }
+     h1{                                   /*Setting*/
+      margin-left: 0px;
+      color:rgb(233, 182, 182);
+      align-items: center;
+      justify-content: baseline;
+      font-size: 18px;
   }
-  .boxElement{
-    position: absolute;
-    display:flex;
-    width:150px;
-    height:155px;
-    background-color: rgb(143, 73, 51);
-    border: 2px solid rgb(17, 10, 10);
-    padding-left:-500px;
-  padding-bottom:50px;
-    margin-left: -60px;
-    margin-top: 80px;
-    border-radius: 5px;
+  h2{                                     /*Play As & Start*/
+    margin-left: -35px;
+    color:rgb(240, 200, 200);
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-shadow: 0.5px 0.5px 0.5px rgb(179, 25, 58), 0 0 25px rgb(9, 92, 20), 0 0 5px rgb(139, 0, 30);
+    }
+  a:visited {    /* on  line help*/
+    text-decoration:underline;
+    color:rgb(69, 240, 17)
   }
   
-.boxform5{
-  background-color: blue;
-  width: 100px;
-  height: 100px;
-  border: 10px;
-}
+  a:hover {
+    text-decoration: underline;
+    color: rgb(231, 206, 208);
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: blue;
+  }
+
+  
+  
+   
+    p {                                   /* Background color*/
+       font-weight: 500;
+       font-size: 14px;
+           text-shadow: 0.5px 0.5px 0.5px rgb(179, 25, 58), 0 0 25px rgb(9, 92, 20), 0 0 5px rgb(139, 0, 30);
+      }
+
+   h5{                                     /*Play As & Start*/
+    margin-left: -00px;
+    color:rgb(240, 200, 200);
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-shadow: 0.5px 0.5px 0.5px rgb(179, 25, 58), 0 0 25px rgb(9, 92, 20), 0 0 5px rgb(139, 0, 30);
+    }
+
+    h6{                                         /*play as*/
+      margin-left: 25px;
+      margin-top: 0px;
+      color:rgb(240, 200, 200);
+      font-size: 25px;
+      text-shadow: 0.5px 0.5px 0.5px rgb(179, 25, 58), 0 0 25px rgb(9, 92, 20), 0 0 5px rgb(139, 0, 30);
+      }
+    .boxElement{
+      position: absolute;
+      display:flex;
+      width:151px;
+      height:295px;
+      background-color: rgb(143, 73, 51);
+      border: 2px solid rgb(17, 10, 10);
+      padding-left:-0px;
+      padding-top:0px;
+      margin-left: -170px;
+      margin-top:-300px;
+      border-radius: 5px;
+    }
+    .setting{       /* setting*/
+      position: absolute;
+      display:flex;
+      width:148px;
+      height:20px;
+      background-color: rgb(173, 71, 40);
+      border: 2px solid rgb(17, 10, 10);
+      padding-left:0px;
+      margin-top:3px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+ 
+    .backgroundGreen{           /* backgroung green*/
+      position: absolute;
+      display:flex;
+      width:148px;
+      height:20px;
+      background-color: rgb(184, 231, 202);
+      border: 2px solid rgb(17, 10, 10);
+      padding-left:0px;
+      margin-top:30px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+    .backgroundBlue{               /* background blue*/
+      position: absolute;
+      display:flex;
+      width:148px;
+      height:20px;
+      background-color: rgb(4, 75, 75);
+      border: 2px solid rgb(17, 10, 10);
+      padding-left:0px;
+      margin-top:56px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+    .backgroungBrown{                 /* backgroung brown*/
+      position: absolute; 
+      display:flex;
+      width:148px;
+      height:20px;
+      background-color: "rgb(104, 43, 19)";
+      border: 2px solid rgb(17, 10, 10);
+      padding-left:0px;
+      margin-top:82px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+   
+    .Level{                 /* Level*/
+      position: absolute; 
+      display:flex;
+      width:148px;
+      height:20px;
+      background-color:rgb(54, 48, 49);
+      border: 2px solid rgb(136, 123, 123);
+      padding-left:0px;
+      margin-top:108px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+
+                                 /*drop down  starts*/
+    .dropbtn {
+      background-color: rgba(0, 0, 0, 0.0);
+      color: rgb(53, 8, 8);
+      padding: 0px;
+     
+      font-size: 16px;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #463232;
+      min-width: 100px;
+      box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: rgb(233, 210, 210);
+      padding: 5px 10px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: rgb(238, 138, 138);}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: rgba(0, 0, 0, 0);}
+                                 /*drop down ends */
+
+
+    .OnlineHelp{     /* On line Help   */
+      position: absolute;
+      display:flex;
+      width:146px;
+      height:20px;
+      background-color:rgb(39, 238, 89);
+      border: 2px solid rgb(154, 236, 175);
+      padding-left:0px;
+      margin-top:200px;
+      border-radius: 7px;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+   /* .PlayAs{
+      position: absolute;
+      display:flex;
+      width:148px;
+      height:20px;
+      background-color: rgb(231, 184, 184);
+      border: 2px solid rgb(17, 10, 10);
+      padding-left:0px;
+      margin-top:242px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+    }*/
+
+
+    .ResetAll{              /*Reset All*/
+      position: absolute;
+      display:flex;
+      width:148px;
+      height:27px;
+      background-color: rgb(187, 26, 14);
+      border: 2px solid rgb(17, 10, 10);
+      padding-left:0px;
+      margin-top:262px;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .PlayAsStart{                  /* Play As & Start  */
+      position: absolute;
+      display:flex;
+      width:148px;
+      height:25px;
+      background-color: rgb(119, 74, 74);
+      border: 2px solid rgb(17, 10, 10);
+      padding-left:0px;
+      margin-top:230px;
+      border-radius: 7px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+    .pressbox{                    /* play As  */
+      position: absolute;
+  
+      width:130px;
+      height:72px;
+      background-color: rgba(143, 73, 51,0.8);
+      border: 2px solid rgb(17, 10, 10);
+      margin-left:252px;
+      margin-top:110px;
+      border-radius: 7px;
+  
+   
+    }
+   
+ 
+                        /*  stopwatch starts*/
+  
+    .watchbox1{
+      position: absolute;
+      display:flex;
+      width:115px;
+      height:40px;
+      background-color: rgb(143, 73, 51);
+      border: 2px solid rgb(17, 10, 10);
+      margin-left:310px;
+      margin-top:-300px;
+      border-radius: 5px;
+      align-items: center;
+      
+    }
+    .watchbox2{
+      position: absolute;
+      display:flex;
+      width:115px;
+      height:40px;
+      background-color: rgb(143, 73, 51);
+      border: 2px solid rgb(17, 10, 10);
+      margin-left:310px;
+      margin-top:-45px;
+      border-radius: 5px;
+      align-items: center;
+      justify-content: center;
+    }
+   
+      .stopwatch span {
+        font-weight: bold;
+        display: block;   
+       
+      }
+      
+      .stopwatch a {
+        padding-right: 5px;
+        text-decoration: none; 
+        color: #c2b3b3;
+        align-content:flex-start;
+        justify-content: center;
+        margin-left: 8px;
+        text-shadow: 1px 1px 5px black, 0 0 25px rgb(210, 210, 238), 0 0 5px rgb(74, 139, 0);
+      }
+                        /*  stopwatch ends*/
+
+                         /*  clock starts*/
+       .boxClock{
+        position: absolute;
+        display:flex;
+        width:70px;
+        height:70px;
+        border: 2px solid #c2b3b3;
+        padding-left:0px;
+        margin-top:110px;
+        margin-left: 335px;
+        border-radius:100px;
+        justify-content:center;
+        align-items: center;
+        background-color: rgba(180, 105, 105, 0.3);
+        }
+
+                        /*  clock ends*/
+ 
+  
+
+
+
+
+/* flip flap starts new */
+
+
+
+
+
+
