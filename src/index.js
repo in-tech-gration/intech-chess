@@ -2,13 +2,53 @@
 
 //const { Chess } = require("chess.js");
 
-let btn = document.querySelector(".press"); 
-btn.addEventListener("click", flip);
+//display  starts//
 
-function move2d4() {         
-  // board.move("d2-d6");
-  board.move("wQ-e8");
+let btn = document.querySelector(".press");
+btn.addEventListener("click", flip);
+if (btn.addEventListener === true) {
+  document.getElementById("pressbox").style.dispaly = "display";
 }
+function removeElement() {
+  document.getElementById("pressbox").style.display = "none";
+}
+
+let reset = document.getElementById("resetAll");
+reset.addEventListener("click", () => {
+  board.start();
+
+});
+//display  ends//pl
+
+
+//Play As box reset and display none starts//
+
+function saveValue() {
+  var x = document.querySelector(".pressbox");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+//Play As box reset and display none ends//
+
+
+
+
+
+
+/*Background color change starts*/
+
+function green() { document.body.style.background = "rgb(104, 150, 100)"; }
+function blueStar() { document.body.style.background = "rgb(10, 50, 50)"; }
+function brown() { document.body.style.background = "rgb(104, 43, 19)"; }
+/*Background color change ends*/
+
+
+
+//Main board starts//
+
 
 function flip() {
   board.flip();
@@ -59,18 +99,12 @@ while (!chess.game_over()) {
   chess.move(move);
 }
 console.log(chess.pgn());
-// button. when you press it. you move the d2 pawn to d4;
+
+//Main board ends//
 
 
-
-
-
-
-
-
-
-// The New Codes Starts//
-var Stopwatch = function(elem, options) {
+// The Stopwatch Starts//
+var Stopwatch = function (elem, options) {
 
   var timer = createTimer(),
     startButton = createButton("start", start),
@@ -102,7 +136,7 @@ var Stopwatch = function(elem, options) {
     var a = document.createElement("a");
     a.href = "#" + action;
     a.innerHTML = action;
-    a.addEventListener("click", function(event) {
+    a.addEventListener("click", function (event) {
       handler();
       event.preventDefault();
     });
@@ -140,8 +174,8 @@ var Stopwatch = function(elem, options) {
   function delta() {
     var now = Date.now(),
       d = now - offset;
-      offset = now;
-      return d;
+    offset = now;
+    return d;
   }
 
   // public API
@@ -156,44 +190,24 @@ var elems = document.getElementsByClassName("basic");
 for (var i = 0, len = elems.length; i < len; i++) {
   new Stopwatch(elems[i]);
 }
+// The Stopwatch ends//
 
-//..........................DATE TIME
+
+// Clock starts//
 
 function startTime() {
   const today = new Date();
   let h = today.getHours();
   let m = today.getMinutes();
   let s = today.getSeconds();
-  let ms=today.getMilliseconds();
+  let ms = today.getMilliseconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s ;
+  document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
   setTimeout(startTime, 1000);
 }
 function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  if (i < 10) { i = "0" + i };
   return i;
 }
-
-
-
-function brown(){ document.body.style.background = "white"; }
-function darkBrown(){ document.body.style.background = "rgb(104, 43, 19)"; }
-
-
-
-
-/* movenemt <codes*/
-//document.body.style.backgroundColor = "red";//     change the body color //
-
-
-
-
-
-
-/* box in js*/
-el=document.getElementById("box1");
-width=window.innerWidth +50;
-height=window.innerHeight+50;
-el.style.left=width*Math.random();
-el.style.top=height*Math.random();
+                                           // Clock ends//
